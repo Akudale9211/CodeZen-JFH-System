@@ -1,0 +1,158 @@
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #222;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.55rem 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  filter: brightness(90%);
+}
+
+.blue {
+  background-color: #007bff;
+}
+
+.purple {
+  background-color: #6f42c1;
+}
+
+.green {
+  background-color: #28a745;
+}
+
+.orange {
+  background-color: #fd7e14;
+}
+
+.date-picker-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 220px;
+}
+
+.date-label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
+.date-input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.error {
+  color: #dc3545;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.no-data {
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ddd;
+  padding: 0.7rem 0.8rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.invoice-table th {
+  background-color: #f4f4f4;
+  font-weight: 700;
+}
+
+.item {
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.button.red {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button.red:hover {
+  background-color: #b71c1c;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+  }
+  .button-group {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .date-picker-group {
+    width: 100%;
+  }
+}

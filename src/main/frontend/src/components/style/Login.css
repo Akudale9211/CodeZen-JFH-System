@@ -1,0 +1,44 @@
+.login-box {
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(56, 142, 60, 0.15);
+  padding: 36px 32px 28px 32px;
+  text-align: center;
+  min-width: 320px;
+}
+
+.login-input {
+  width: 90%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1px solid #bdbdbd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.2s;
+}
+
+.login-input:focus {
+  border: 1.5px solid #388e3c;
+  outline: none;
+}
+
+.login-btn {
+  background: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: #256029;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}

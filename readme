@@ -1,0 +1,48 @@
+{
+  "fullName": "Rahul Sharma",
+  "address": "123 Market Street, Pune",
+  "gstNumber": "27ABCDE1234F1Z5",
+  "contactNumber": "9876543210",
+  "invoiceDate": "2025-05-16",
+  "transportCost": 1500.00,
+  "wages": 500.00,
+  "vehicleNumber": "MH12AB1234",
+  "items": [
+    {
+      "goodsType": "Wheat",
+      "hsnCode": "1001",
+      "noOfBags": 10,
+      "totalWeight": 500.00,
+      "rate": 40.00
+    },
+    {
+      "goodsType": "Rice",
+      "hsnCode": "1002",
+      "noOfBags": 5,
+      "totalWeight": 300.00,
+      "rate": 60.00
+    },
+    {
+      "goodsType": "Barley",
+      "hsnCode": "1003",
+      "noOfBags": 8,
+      "totalWeight": 400.00,
+      "rate": 45.00
+    }
+  ]
+}
+
+
+====================
+User Creation
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+................................................
+fetch by name
+http://localhost:8080/api/history/by-customer?name=shinde
+
+run this on blling to get custom jar
+jlink --module-path "%JAVA_HOME%\jmods" --add-modules java.base,java.desktop --output jdk\custom-jre

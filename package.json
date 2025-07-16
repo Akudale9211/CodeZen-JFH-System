@@ -1,0 +1,39 @@
+{
+  "name": "marketyard-desktop",
+  "version": "1.0.0",
+  "description": "Desktop launcher for Market Yard Billing App",
+  "main": "main.js",
+  "author": "Your Name",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.marketyard.desktop",
+    "productName": "MarketYardBill",
+    "files": [
+      "main.js",
+      "package.json",
+      "node_modules/**/*"
+    ],
+    "extraFiles": [
+      {
+        "from": "marketyardbill-0.0.1-SNAPSHOT.jar",
+        "to": "marketyardbill-0.0.1-SNAPSHOT.jar"
+      }
+    ],
+    "asarUnpack": [
+      "marketyardbill-0.0.1-SNAPSHOT.jar"
+    ],
+    "win": {
+      "target": ["nsis"]
+    }
+  },
+  "dependencies": {
+    "wait-port": "^0.2.9"
+  },
+  "devDependencies": {
+    "electron": "^26.1.0",
+    "electron-builder": "^26.0.12"
+  }
+}

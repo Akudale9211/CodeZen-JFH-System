@@ -1,0 +1,551 @@
+warning: in the working copy of 'logs/app.log', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/logs/app.log b/logs/app.log[m
+[1mindex 2ff3ef7..84d10e0 100644[m
+[1m--- a/logs/app.log[m
+[1m+++ b/logs/app.log[m
+[36m@@ -396,3 +396,545 @@[m [mCaused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q[m
+ 2025-05-06T00:45:20.141+05:30  INFO 13460 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+ 2025-05-06T00:45:20.155+05:30  INFO 13460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...[m
+ 2025-05-06T00:45:20.242+05:30  INFO 13460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T01:40:43.425+05:30  INFO 11948 --- [restartedMain] c.m.m.MarketyardbillApplication          : Starting MarketyardbillApplication using Java 17.0.12 with PID 11948 (D:\WorkSpace\billingSoftware\target\classes started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T01:40:43.432+05:30  INFO 11948 --- [restartedMain] c.m.m.MarketyardbillApplication          : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T01:40:44.160+05:30  INFO 11948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[m
+[32m+[m[32m2025-05-06T01:40:44.160+05:30  INFO 11948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[m
+[32m+[m[32m2025-05-06T01:40:54.500+05:30  INFO 11948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T01:40:55.128+05:30  INFO 11948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 566 ms. Found 2 JPA repository interfaces.[m
+[32m+[m[32m2025-05-06T01:40:58.618+05:30  INFO 11948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)[m
+[32m+[m[32m2025-05-06T01:40:58.743+05:30  INFO 11948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat][m
+[32m+[m[32m2025-05-06T01:40:58.744+05:30  INFO 11948 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40][m
+[32m+[m[32m2025-05-06T01:40:59.162+05:30  INFO 11948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext[m
+[32m+[m[32m2025-05-06T01:40:59.163+05:30  INFO 11948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14948 ms[m
+[32m+[m[32m2025-05-06T01:41:01.011+05:30  INFO 11948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T01:41:02.086+05:30  INFO 11948 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final[m
+[32m+[m[32m2025-05-06T01:41:02.776+05:30  INFO 11948 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T01:41:11.788+05:30  INFO 11948 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T01:41:12.217+05:30  INFO 11948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...[m
+[32m+[m[32m2025-05-06T01:41:23.109+05:30  INFO 11948 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6306c85f[m
+[32m+[m[32m2025-05-06T01:41:23.113+05:30  INFO 11948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.[m
+[32m+[m[32m2025-05-06T01:41:25.982+05:30  WARN 11948 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T01:41:25.986+05:30  WARN 11948 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T01:41:26.399+05:30  INFO 11948 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T01:41:44.134+05:30  INFO 11948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T01:41:49.029+05:30  INFO 11948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T01:41:53.735+05:30  WARN 11948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[m
+[32m+[m[32m2025-05-06T01:41:56.363+05:30  INFO 11948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729[m
+[32m+[m[32m2025-05-06T01:41:56.585+05:30  INFO 11948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'[m
+[32m+[m[32m2025-05-06T01:41:56.606+05:30  INFO 11948 --- [restartedMain] c.m.m.MarketyardbillApplication          : Started MarketyardbillApplication in 78.153 seconds (process running for 90.276)[m
+[32m+[m[32m2025-05-06T01:42:15.823+05:30  INFO 11948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'[m
+[32m+[m[32m2025-05-06T01:42:15.824+05:30  INFO 11948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'[m
+[32m+[m[32m2025-05-06T01:42:15.827+05:30  INFO 11948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms[m
+[32m+[m[32m2025-05-06T01:47:23.952+05:30  INFO 11948 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete[m
+[32m+[m[32m2025-05-06T01:47:24.352+05:30  INFO 11948 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete[m
+[32m+[m[32m2025-05-06T01:47:24.358+05:30  INFO 11948 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T01:47:24.402+05:30  INFO 11948 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T01:47:24.700+05:30  INFO 11948 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:32:09.427+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Starting MarketyardbillApplication using Java 17.0.12 with PID 9448 (D:\WorkSpace\billingSoftware\target\classes started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:32:09.433+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:32:09.780+05:30  INFO 9448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[m
+[32m+[m[32m2025-05-06T02:32:09.781+05:30  INFO 9448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[m
+[32m+[m[32m2025-05-06T02:32:13.076+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:32:13.238+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 2 JPA repository interfaces.[m
+[32m+[m[32m2025-05-06T02:32:16.486+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)[m
+[32m+[m[32m2025-05-06T02:32:16.616+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat][m
+[32m+[m[32m2025-05-06T02:32:16.616+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40][m
+[32m+[m[32m2025-05-06T02:32:16.984+05:30  INFO 9448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext[m
+[32m+[m[32m2025-05-06T02:32:16.985+05:30  INFO 9448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7203 ms[m
+[32m+[m[32m2025-05-06T02:32:19.218+05:30  INFO 9448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:32:19.768+05:30  INFO 9448 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final[m
+[32m+[m[32m2025-05-06T02:32:19.967+05:30  INFO 9448 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:32:21.384+05:30  INFO 9448 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:32:21.694+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...[m
+[32m+[m[32m2025-05-06T02:32:25.155+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b169842[m
+[32m+[m[32m2025-05-06T02:32:25.162+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.[m
+[32m+[m[32m2025-05-06T02:32:26.049+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:32:26.052+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:32:26.579+05:30  INFO 9448 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:32:32.413+05:30  INFO 9448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:32:39.193+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:32:42.216+05:30  WARN 9448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[m
+[32m+[m[32m2025-05-06T02:32:46.467+05:30  INFO 9448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729[m
+[32m+[m[32m2025-05-06T02:32:46.763+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'[m
+[32m+[m[32m2025-05-06T02:32:46.796+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Started MarketyardbillApplication in 39.619 seconds (process running for 43.276)[m
+[32m+[m[32m2025-05-06T02:41:13.354+05:30  INFO 9448 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 11 class path changes (0 additions, 11 deletions, 0 modifications)[m
+[32m+[m[32m2025-05-06T02:41:13.388+05:30  INFO 9448 --- [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete[m
+[32m+[m[32m2025-05-06T02:41:15.211+05:30  INFO 9448 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete[m
+[32m+[m[32m2025-05-06T02:41:15.221+05:30  INFO 9448 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:41:15.229+05:30  INFO 9448 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T02:41:15.370+05:30  INFO 9448 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:41:32.080+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Starting MarketyardbillApplication using Java 17.0.12 with PID 9448 (D:\WorkSpace\billingSoftware\target\classes started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:41:32.088+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:41:32.905+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:41:32.909+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.[m
+[32m+[m[32m2025-05-06T02:41:33.220+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)[m
+[32m+[m[32m2025-05-06T02:41:33.225+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat][m
+[32m+[m[32m2025-05-06T02:41:33.230+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40][m
+[32m+[m[32m2025-05-06T02:41:33.353+05:30  INFO 9448 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext[m
+[32m+[m[32m2025-05-06T02:41:33.356+05:30  INFO 9448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1253 ms[m
+[32m+[m[32m2025-05-06T02:41:34.384+05:30  INFO 9448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:41:34.389+05:30  INFO 9448 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:41:34.461+05:30  INFO 9448 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:41:34.462+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...[m
+[32m+[m[32m2025-05-06T02:41:34.545+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3331d20a[m
+[32m+[m[32m2025-05-06T02:41:34.545+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.[m
+[32m+[m[32m2025-05-06T02:41:34.546+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:41:34.547+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:41:34.548+05:30  INFO 9448 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:41:34.587+05:30  INFO 9448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:41:34.587+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:41:34.662+05:30  WARN 9448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[m
+[32m+[m[32m2025-05-06T02:41:35.085+05:30  INFO 9448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729[m
+[32m+[m[32m2025-05-06T02:41:35.104+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'[m
+[32m+[m[32m2025-05-06T02:41:35.111+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Started MarketyardbillApplication in 3.167 seconds (process running for 571.59)[m
+[32m+[m[32m2025-05-06T02:41:35.115+05:30  INFO 9448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged[m
+[32m+[m[32m2025-05-06T02:41:39.647+05:30  INFO 9448 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (10 additions, 0 deletions, 0 modifications)[m
+[32m+[m[32m2025-05-06T02:41:39.649+05:30  INFO 9448 --- [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete[m
+[32m+[m[32m2025-05-06T02:41:39.965+05:30  INFO 9448 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete[m
+[32m+[m[32m2025-05-06T02:41:39.968+05:30  INFO 9448 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:41:39.969+05:30  INFO 9448 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T02:41:39.979+05:30  INFO 9448 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:41:40.557+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Starting MarketyardbillApplication using Java 17.0.12 with PID 9448 (D:\WorkSpace\billingSoftware\target\classes started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:41:40.557+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:41:41.091+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:41:41.143+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.[m
+[32m+[m[32m2025-05-06T02:41:41.398+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)[m
+[32m+[m[32m2025-05-06T02:41:41.400+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat][m
+[32m+[m[32m2025-05-06T02:41:41.400+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40][m
+[32m+[m[32m2025-05-06T02:41:41.481+05:30  INFO 9448 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext[m
+[32m+[m[32m2025-05-06T02:41:41.482+05:30  INFO 9448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 922 ms[m
+[32m+[m[32m2025-05-06T02:41:41.578+05:30  INFO 9448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:41:41.588+05:30  INFO 9448 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:41:41.636+05:30  INFO 9448 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:41:41.638+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...[m
+[32m+[m[32m2025-05-06T02:41:41.709+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@677ca097[m
+[32m+[m[32m2025-05-06T02:41:41.710+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.[m
+[32m+[m[32m2025-05-06T02:41:41.711+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:41:41.712+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:41:41.712+05:30  INFO 9448 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:41:42.061+05:30  INFO 9448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:41:42.779+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:41:42.911+05:30  WARN 9448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[m
+[32m+[m[32m2025-05-06T02:41:43.097+05:30  INFO 9448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729[m
+[32m+[m[32m2025-05-06T02:41:43.111+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'[m
+[32m+[m[32m2025-05-06T02:41:43.118+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Started MarketyardbillApplication in 3.02 seconds (process running for 579.598)[m
+[32m+[m[32m2025-05-06T02:41:43.121+05:30  INFO 9448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged[m
+[32m+[m[32m2025-05-06T02:41:54.275+05:30  INFO 14572 --- [main] c.m.m.MarketyardbillApplicationTests     : Starting MarketyardbillApplicationTests using Java 17.0.12 with PID 14572 (started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:41:54.279+05:30  INFO 14572 --- [main] c.m.m.MarketyardbillApplicationTests     : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:41:56.733+05:30  INFO 14572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:41:57.027+05:30  INFO 14572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168 ms. Found 2 JPA repository interfaces.[m
+[32m+[m[32m2025-05-06T02:41:59.020+05:30  INFO 14572 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:41:59.480+05:30  INFO 14572 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final[m
+[32m+[m[32m2025-05-06T02:41:59.727+05:30  INFO 14572 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:42:01.261+05:30  INFO 14572 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:42:01.424+05:30  INFO 14572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...[m
+[32m+[m[32m2025-05-06T02:42:03.536+05:30  INFO 14572 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bc0b8c8[m
+[32m+[m[32m2025-05-06T02:42:03.541+05:30  INFO 14572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.[m
+[32m+[m[32m2025-05-06T02:42:03.775+05:30  WARN 14572 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:42:03.776+05:30  WARN 14572 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:42:03.874+05:30  INFO 14572 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:42:08.194+05:30  INFO 14572 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:42:08.305+05:30  INFO 14572 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:42:09.576+05:30  WARN 14572 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[m
+[32m+[m[32m2025-05-06T02:42:11.161+05:30  INFO 14572 --- [main] c.m.m.MarketyardbillApplicationTests     : Started MarketyardbillApplicationTests in 18.352 seconds (process running for 25.113)[m
+[32m+[m[32m2025-05-06T02:42:14.035+05:30  INFO 14572 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:42:14.046+05:30  INFO 14572 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T02:42:14.085+05:30  INFO 14572 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:43:21.176+05:30  INFO 9448 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (0 additions, 10 deletions, 0 modifications)[m
+[32m+[m[32m2025-05-06T02:43:21.179+05:30  INFO 9448 --- [Thread-14] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete[m
+[32m+[m[32m2025-05-06T02:43:21.634+05:30  INFO 9448 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete[m
+[32m+[m[32m2025-05-06T02:43:21.638+05:30  INFO 9448 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:43:21.641+05:30  INFO 9448 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T02:43:21.659+05:30  INFO 9448 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:43:21.819+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Starting MarketyardbillApplication using Java 17.0.12 with PID 9448 (D:\WorkSpace\billingSoftware\target\classes started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:43:21.819+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:43:22.353+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:43:22.393+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 0 JPA repository interfaces.[m
+[32m+[m[32m2025-05-06T02:43:22.617+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)[m
+[32m+[m[32m2025-05-06T02:43:22.623+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat][m
+[32m+[m[32m2025-05-06T02:43:22.624+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40][m
+[32m+[m[32m2025-05-06T02:43:22.660+05:30  INFO 9448 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext[m
+[32m+[m[32m2025-05-06T02:43:22.660+05:30  INFO 9448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 837 ms[m
+[32m+[m[32m2025-05-06T02:43:22.716+05:30  INFO 9448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:43:22.724+05:30  INFO 9448 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:43:22.791+05:30  INFO 9448 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:43:22.793+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...[m
+[32m+[m[32m2025-05-06T02:43:23.372+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@270e9da0[m
+[32m+[m[32m2025-05-06T02:43:23.373+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.[m
+[32m+[m[32m2025-05-06T02:43:23.373+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:43:23.373+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:43:23.374+05:30  INFO 9448 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:43:23.447+05:30  INFO 9448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:43:23.447+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:43:23.532+05:30  WARN 9448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[m
+[32m+[m[32m2025-05-06T02:43:24.085+05:30  INFO 9448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729[m
+[32m+[m[32m2025-05-06T02:43:24.109+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'[m
+[32m+[m[32m2025-05-06T02:43:24.132+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Started MarketyardbillApplication in 2.386 seconds (process running for 680.612)[m
+[32m+[m[32m2025-05-06T02:43:24.135+05:30  INFO 9448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged[m
+[32m+[m[32m2025-05-06T02:43:29.690+05:30  INFO 9448 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 6 class path changes (6 additions, 0 deletions, 0 modifications)[m
+[32m+[m[32m2025-05-06T02:43:29.693+05:30  INFO 9448 --- [Thread-18] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete[m
+[32m+[m[32m2025-05-06T02:43:30.374+05:30  INFO 9448 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete[m
+[32m+[m[32m2025-05-06T02:43:30.387+05:30  INFO 9448 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:43:30.390+05:30  INFO 9448 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T02:43:30.430+05:30  INFO 9448 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:43:30.750+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Starting MarketyardbillApplication using Java 17.0.12 with PID 9448 (D:\WorkSpace\billingSoftware\target\classes started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:43:30.753+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:43:32.892+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:43:33.142+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 247 ms. Found 1 JPA repository interface.[m
+[32m+[m[32m2025-05-06T02:43:33.917+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)[m
+[32m+[m[32m2025-05-06T02:43:33.944+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat][m
+[32m+[m[32m2025-05-06T02:43:33.944+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40][m
+[32m+[m[32m2025-05-06T02:43:34.246+05:30  INFO 9448 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext[m
+[32m+[m[32m2025-05-06T02:43:34.246+05:30  INFO 9448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3489 ms[m
+[32m+[m[32m2025-05-06T02:43:35.142+05:30  INFO 9448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:43:35.226+05:30  INFO 9448 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:43:35.253+05:30  INFO 9448 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:43:35.255+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...[m
+[32m+[m[32m2025-05-06T02:43:35.283+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b0dae02[m
+[32m+[m[32m2025-05-06T02:43:35.284+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.[m
+[32m+[m[32m2025-05-06T02:43:35.285+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:43:35.285+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:43:35.285+05:30  INFO 9448 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:43:35.494+05:30  INFO 9448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:43:35.646+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:43:35.839+05:30  WARN 9448 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceController': Lookup method resolution failed[m
+[32m+[m[32m2025-05-06T02:43:35.840+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:43:35.840+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T02:43:35.874+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:43:35.876+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat][m
+[32m+[m[32m2025-05-06T02:43:35.885+05:30  INFO 9448 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger :[m[41m [m
+[32m+[m
+[32m+[m[32mError starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.[m
+[32m+[m[32m2025-05-06T02:43:35.895+05:30 ERROR 9448 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed[m
+[32m+[m
+[32m+[m[32morg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceController': Lookup method resolution failed[m
+[32m+[m	[32mat org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat com.marketyardbill.marketyardbill.MarketyardbillApplication.main(MarketyardbillApplication.java:10) ~[classes/:na][m
+[32m+[m	[32mat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na][m
+[32m+[m	[32mat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na][m
+[32m+[m	[32mat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na][m
+[32m+[m	[32mat org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5][m
+[32m+[m[32mCaused by: java.lang.IllegalStateException: Failed to introspect Class [com.marketyardbill.marketyardbill.controller.InvoiceController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@12ff208d][m
+[32m+[m	[32mat org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32m... 26 common frames omitted[m
+[32m+[m[32mCaused by: java.lang.NoClassDefFoundError: com/marketyardbill/marketyardbill/dto/InvoiceDTO[m
+[32m+[m	[32mat java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na][m
+[32m+[m	[32mat org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.6.jar:6.2.6][m
+[32m+[m	[32m... 28 common frames omitted[m
+[32m+[m[32mCaused by: java.lang.ClassNotFoundException: com.marketyardbill.marketyardbill.dto.InvoiceDTO[m
+[32m+[m	[32mat java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na][m
+[32m+[m	[32mat java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.Class.forName0(Native Method) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.Class.forName(Class.java:467) ~[na:na][m
+[32m+[m	[32mat org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na][m
+[32m+[m	[32m... 32 common frames omitted[m
+[32m+[m
+[32m+[m[32m2025-05-06T02:44:26.262+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Starting MarketyardbillApplication using Java 17.0.12 with PID 9448 (D:\WorkSpace\billingSoftware\target\classes started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:44:26.262+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:44:26.750+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:44:26.755+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.[m
+[32m+[m[32m2025-05-06T02:44:27.196+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)[m
+[32m+[m[32m2025-05-06T02:44:27.198+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat][m
+[32m+[m[32m2025-05-06T02:44:27.198+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40][m
+[32m+[m[32m2025-05-06T02:44:27.405+05:30  INFO 9448 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext[m
+[32m+[m[32m2025-05-06T02:44:27.406+05:30  INFO 9448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1140 ms[m
+[32m+[m[32m2025-05-06T02:44:27.500+05:30  INFO 9448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:44:27.510+05:30  INFO 9448 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:44:27.533+05:30  INFO 9448 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:44:27.537+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...[m
+[32m+[m[32m2025-05-06T02:44:27.585+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e819eec[m
+[32m+[m[32m2025-05-06T02:44:27.586+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.[m
+[32m+[m[32m2025-05-06T02:44:27.587+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:44:27.588+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:44:27.589+05:30  INFO 9448 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:44:27.632+05:30  INFO 9448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:44:27.632+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:44:27.739+05:30  WARN 9448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[m
+[32m+[m[32m2025-05-06T02:44:28.197+05:30  INFO 9448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729[m
+[32m+[m[32m2025-05-06T02:44:28.278+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'[m
+[32m+[m[32m2025-05-06T02:44:28.288+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Started MarketyardbillApplication in 2.353 seconds (process running for 744.768)[m
+[32m+[m[32m2025-05-06T02:44:28.383+05:30  INFO 9448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged[m
+[32m+[m[32m2025-05-06T02:44:36.512+05:30  INFO 9448 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 6 class path changes (6 additions, 0 deletions, 0 modifications)[m
+[32m+[m[32m2025-05-06T02:44:36.524+05:30  INFO 9448 --- [Thread-22] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete[m
+[32m+[m[32m2025-05-06T02:44:36.948+05:30  INFO 9448 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete[m
+[32m+[m[32m2025-05-06T02:44:36.949+05:30  INFO 9448 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:44:36.951+05:30  INFO 9448 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T02:44:36.961+05:30  INFO 9448 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:44:37.467+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Starting MarketyardbillApplication using Java 17.0.12 with PID 9448 (D:\WorkSpace\billingSoftware\target\classes started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:44:37.467+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:44:38.911+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:44:38.937+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.[m
+[32m+[m[32m2025-05-06T02:44:39.378+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)[m
+[32m+[m[32m2025-05-06T02:44:39.380+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat][m
+[32m+[m[32m2025-05-06T02:44:39.380+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40][m
+[32m+[m[32m2025-05-06T02:44:39.430+05:30  INFO 9448 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext[m
+[32m+[m[32m2025-05-06T02:44:39.432+05:30  INFO 9448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1959 ms[m
+[32m+[m[32m2025-05-06T02:44:39.668+05:30  INFO 9448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:44:39.678+05:30  INFO 9448 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:44:39.719+05:30  INFO 9448 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:44:39.758+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...[m
+[32m+[m[32m2025-05-06T02:44:39.805+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c7e4551[m
+[32m+[m[32m2025-05-06T02:44:39.806+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.[m
+[32m+[m[32m2025-05-06T02:44:39.808+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:44:39.808+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:44:39.809+05:30  INFO 9448 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:44:40.036+05:30  INFO 9448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:44:40.051+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:44:40.129+05:30  WARN 9448 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceController': Lookup method resolution failed[m
+[32m+[m[32m2025-05-06T02:44:40.129+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:44:40.133+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T02:44:40.142+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:44:40.143+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat][m
+[32m+[m[32m2025-05-06T02:44:40.149+05:30  INFO 9448 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger :[m[41m [m
+[32m+[m
+[32m+[m[32mError starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.[m
+[32m+[m[32m2025-05-06T02:44:40.152+05:30 ERROR 9448 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed[m
+[32m+[m
+[32m+[m[32morg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceController': Lookup method resolution failed[m
+[32m+[m	[32mat org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat com.marketyardbill.marketyardbill.MarketyardbillApplication.main(MarketyardbillApplication.java:10) ~[classes/:na][m
+[32m+[m	[32mat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na][m
+[32m+[m	[32mat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na][m
+[32m+[m	[32mat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na][m
+[32m+[m	[32mat org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5][m
+[32m+[m[32mCaused by: java.lang.IllegalStateException: Failed to introspect Class [com.marketyardbill.marketyardbill.controller.InvoiceController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7c263d83][m
+[32m+[m	[32mat org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.2.6.jar:6.2.6][m
+[32m+[m	[32mat org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476) ~[spring-beans-6.2.6.jar:6.2.6][m
+[32m+[m	[32m... 26 common frames omitted[m
+[32m+[m[32mCaused by: java.lang.NoClassDefFoundError: com/marketyardbill/marketyardbill/dto/InvoiceDTO[m
+[32m+[m	[32mat java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na][m
+[32m+[m	[32mat org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.6.jar:6.2.6][m
+[32m+[m	[32m... 28 common frames omitted[m
+[32m+[m[32mCaused by: java.lang.ClassNotFoundException: com.marketyardbill.marketyardbill.dto.InvoiceDTO[m
+[32m+[m	[32mat java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na][m
+[32m+[m	[32mat java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.Class.forName0(Native Method) ~[na:na][m
+[32m+[m	[32mat java.base/java.lang.Class.forName(Class.java:467) ~[na:na][m
+[32m+[m	[32mat org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.4.5.jar:3.4.5][m
+[32m+[m	[32mat java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na][m
+[32m+[m	[32m... 32 common frames omitted[m
+[32m+[m
+[32m+[m[32m2025-05-06T02:45:19.313+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Starting MarketyardbillApplication using Java 17.0.12 with PID 9448 (D:\WorkSpace\billingSoftware\target\classes started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:45:19.314+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:45:19.777+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:45:19.820+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.[m
+[32m+[m[32m2025-05-06T02:45:20.424+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)[m
+[32m+[m[32m2025-05-06T02:45:20.426+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat][m
+[32m+[m[32m2025-05-06T02:45:20.427+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40][m
+[32m+[m[32m2025-05-06T02:45:20.578+05:30  INFO 9448 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext[m
+[32m+[m[32m2025-05-06T02:45:20.578+05:30  INFO 9448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1263 ms[m
+[32m+[m[32m2025-05-06T02:45:20.686+05:30  INFO 9448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:45:20.711+05:30  INFO 9448 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:45:20.737+05:30  INFO 9448 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:45:20.750+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...[m
+[32m+[m[32m2025-05-06T02:45:20.806+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42e57aa6[m
+[32m+[m[32m2025-05-06T02:45:20.807+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.[m
+[32m+[m[32m2025-05-06T02:45:20.808+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:45:20.809+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:45:20.809+05:30  INFO 9448 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:45:20.852+05:30  INFO 9448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:45:20.853+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:45:21.009+05:30  WARN 9448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[m
+[32m+[m[32m2025-05-06T02:45:21.539+05:30  INFO 9448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729[m
+[32m+[m[32m2025-05-06T02:45:21.670+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'[m
+[32m+[m[32m2025-05-06T02:45:21.676+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Started MarketyardbillApplication in 2.399 seconds (process running for 798.155)[m
+[32m+[m[32m2025-05-06T02:45:21.678+05:30  INFO 9448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged[m
+[32m+[m[32m2025-05-06T02:45:28.259+05:30  INFO 9448 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (10 additions, 0 deletions, 0 modifications)[m
+[32m+[m[32m2025-05-06T02:45:28.262+05:30  INFO 9448 --- [Thread-32] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete[m
+[32m+[m[32m2025-05-06T02:45:29.852+05:30  INFO 9448 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete[m
+[32m+[m[32m2025-05-06T02:45:29.856+05:30  INFO 9448 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:45:29.857+05:30  INFO 9448 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T02:45:29.894+05:30  INFO 9448 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:45:30.126+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Starting MarketyardbillApplication using Java 17.0.12 with PID 9448 (D:\WorkSpace\billingSoftware\target\classes started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:45:30.127+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:45:31.176+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:45:31.194+05:30  INFO 9448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.[m
+[32m+[m[32m2025-05-06T02:45:32.877+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)[m
+[32m+[m[32m2025-05-06T02:45:32.880+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat][m
+[32m+[m[32m2025-05-06T02:45:32.882+05:30  INFO 9448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40][m
+[32m+[m[32m2025-05-06T02:45:33.398+05:30  INFO 9448 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext[m
+[32m+[m[32m2025-05-06T02:45:33.398+05:30  INFO 9448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3266 ms[m
+[32m+[m[32m2025-05-06T02:45:33.437+05:30  INFO 9448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:45:33.440+05:30  INFO 9448 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:45:33.449+05:30  INFO 9448 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:45:33.450+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...[m
+[32m+[m[32m2025-05-06T02:45:33.942+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78f4207c[m
+[32m+[m[32m2025-05-06T02:45:33.943+05:30  INFO 9448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.[m
+[32m+[m[32m2025-05-06T02:45:33.943+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:45:33.943+05:30  WARN 9448 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:45:33.944+05:30  INFO 9448 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:45:34.066+05:30  INFO 9448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:45:34.435+05:30  INFO 9448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:45:34.565+05:30  WARN 9448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[m
+[32m+[m[32m2025-05-06T02:45:34.696+05:30  INFO 9448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729[m
+[32m+[m[32m2025-05-06T02:45:34.704+05:30  INFO 9448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'[m
+[32m+[m[32m2025-05-06T02:45:34.708+05:30  INFO 9448 --- [restartedMain] c.m.m.MarketyardbillApplication          : Started MarketyardbillApplication in 4.688 seconds (process running for 811.188)[m
+[32m+[m[32m2025-05-06T02:45:34.711+05:30  INFO 9448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged[m
+[32m+[m[32m2025-05-06T02:45:51.764+05:30  INFO 12824 --- [main] c.m.m.MarketyardbillApplicationTests     : Starting MarketyardbillApplicationTests using Java 17.0.12 with PID 12824 (started by shind in D:\WorkSpace\billingSoftware)[m
+[32m+[m[32m2025-05-06T02:45:51.768+05:30  INFO 12824 --- [main] c.m.m.MarketyardbillApplicationTests     : No active profile set, falling back to 1 default profile: "default"[m
+[32m+[m[32m2025-05-06T02:45:53.990+05:30  INFO 12824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.[m
+[32m+[m[32m2025-05-06T02:45:54.146+05:30  INFO 12824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 2 JPA repository interfaces.[m
+[32m+[m[32m2025-05-06T02:45:55.676+05:30  INFO 12824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default][m
+[32m+[m[32m2025-05-06T02:45:56.516+05:30  INFO 12824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final[m
+[32m+[m[32m2025-05-06T02:45:57.283+05:30  INFO 12824 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled[m
+[32m+[m[32m2025-05-06T02:45:58.726+05:30  INFO 12824 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer[m
+[32m+[m[32m2025-05-06T02:45:58.934+05:30  INFO 12824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...[m
+[32m+[m[32m2025-05-06T02:46:00.962+05:30  INFO 12824 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10745a02[m
+[32m+[m[32m2025-05-06T02:46:00.992+05:30  INFO 12824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.[m
+[32m+[m[32m2025-05-06T02:46:01.184+05:30  WARN 12824 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)[m
+[32m+[m[32m2025-05-06T02:46:01.185+05:30  WARN 12824 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead[m
+[32m+[m[32m2025-05-06T02:46:01.291+05:30  INFO 12824 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:[m
+[32m+[m	[32mDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)'][m
+[32m+[m	[32mDatabase driver: undefined/unknown[m
+[32m+[m	[32mDatabase version: 8.0[m
+[32m+[m	[32mAutocommit mode: undefined/unknown[m
+[32m+[m	[32mIsolation level: undefined/unknown[m
+[32m+[m	[32mMinimum pool size: undefined/unknown[m
+[32m+[m	[32mMaximum pool size: undefined/unknown[m
+[32m+[m[32m2025-05-06T02:46:03.544+05:30  INFO 12824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[m
+[32m+[m[32m2025-05-06T02:46:03.634+05:30  INFO 12824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:46:05.516+05:30  WARN 12824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[m
+[32m+[m[32m2025-05-06T02:46:07.827+05:30  INFO 12824 --- [main] c.m.m.MarketyardbillApplicationTests     : Started MarketyardbillApplicationTests in 17.38 seconds (process running for 22.744)[m
+[32m+[m[32m2025-05-06T02:46:10.570+05:30  INFO 12824 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T02:46:10.590+05:30  INFO 12824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T02:46:10.631+05:30  INFO 12824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.[m
+[32m+[m[32m2025-05-06T02:46:40.955+05:30  INFO 9448 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'[m
+[32m+[m[32m2025-05-06T02:46:40.956+05:30  INFO 9448 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'[m
+[32m+[m[32m2025-05-06T02:46:40.958+05:30  INFO 9448 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms[m
+[32m+[m[32m2025-05-06T05:48:27.588+05:30  WARN 9448 --- [HikariPool-9 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=3h23s226ms334µs200ns).[m
+[32m+[m[32m2025-05-06T22:03:41.708+05:30  WARN 9448 --- [HikariPool-9 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=16h15m5s845ms838µs800ns).[m
+[32m+[m[32m2025-05-06T22:40:04.242+05:30  INFO 9448 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete[m
+[32m+[m[32m2025-05-06T22:40:05.929+05:30  INFO 9448 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete[m
+[32m+[m[32m2025-05-06T22:40:06.951+05:30  INFO 9448 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'[m
+[32m+[m[32m2025-05-06T22:40:08.253+05:30  INFO 9448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...[m
+[32m+[m[32m2025-05-06T22:40:08.384+05:30  INFO 9448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.[m
